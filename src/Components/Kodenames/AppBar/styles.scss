@@ -1,0 +1,60 @@
+@import '@material/button/mixins';
+@import '@material/textfield/mixins';
+@import '../../../colors.scss';
+
+.AppBar__wrapper {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $gray1;
+}
+
+.AppBar__title > h1 {
+    margin: 0;
+    font-weight: 300;
+    padding: 8px;
+}
+
+.AppBar__controls {
+    display: flex;
+}
+
+.AppBar__buttons {
+    margin-top: 9px;
+    margin-left: 5px;
+}
+
+.AppBar__spymasterButton {
+    @include mdc-button-container-fill-color($blue1);
+    margin-right: 9px;
+}
+
+.AppBar__resetButton {
+    @include mdc-button-container-fill-color($blue1);
+    margin-right: 5px;
+}
+
+.AppBar__boardNumberField {
+    @include mdc-text-field-label-color(black);
+    @include mdc-text-field-caret-color(black);
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__leading,
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__notch,
+    .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-notched-outline__trailing {
+        border-color: $blue1;
+    }
+}
+
+.AppBar__score > h1 {
+    display: inline;
+    line-height: 55px;
+    margin-left: 30px;
+}
+
+.AppBar__scoreRed {
+    color: $kodenames-red;
+}
+
+.AppBar__scoreBlue {
+    color: $kodenames-blue;
+}

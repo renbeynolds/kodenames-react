@@ -1,0 +1,9 @@
+@import "@material/textfield/mdc-text-field";
+@import "@material/floating-label/mdc-floating-label";
+@import "@material/notched-outline/mdc-notched-outline";
+@import "./override.scss";
+
+.MDCTextField__wrapper {
+    margin-top: 9px;
+    margin-bottom: 8px;
+}

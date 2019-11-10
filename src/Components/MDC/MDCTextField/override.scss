@@ -1,0 +1,6 @@
+@import "@material/textfield/_mixins";
+
+.mdc-text-field {
+    @include mdc-text-field-outlined-density(-4);
+    @include mdc-text-field-height(37px);
+}

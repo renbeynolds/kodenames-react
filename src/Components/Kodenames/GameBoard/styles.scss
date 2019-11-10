@@ -1,0 +1,53 @@
+@import '../../../colors.scss';
+
+.GameBoard__wrapper {
+    position: absolute;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.GameBoard__table { 
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+    background-color: $gray2;
+}
+
+.GameBoard__card {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 300;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    filter: drop-shadow(3px 3px 2px $gray1);
+    -webkit-filter: drop-shadow(3px 3px 2px $gray1);
+    -moz-filter: drop-shadow(3px 3px 2px $gray1);
+}
+
+.GameBoard__card:hover:not(.GameBoard__cardRed, .GameBoard__cardBlue, .GameBoard__cardYellow, .GameBoard__cardGray) {
+    background-color: $off-white;
+}
+
+.GameBoard__cardRed {
+    background-color: $kodenames-red;
+}
+
+.GameBoard__cardBlue {
+    background-color: $kodenames-blue;
+}
+
+.GameBoard__cardYellow {
+    background-color: $kodenames-yellow;
+}
+
+.GameBoard__cardGray {
+    background-color: $kodenames-gray;
+}
+
+.GameBoard__cardGreen {
+    background-color: $kodenames-green;
+}
