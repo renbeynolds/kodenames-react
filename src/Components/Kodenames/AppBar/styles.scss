@@ -16,6 +16,12 @@
     padding: 8px;
 }
 
+@media screen and (max-width: 750px) {
+    .AppBar__title > h1 {
+        display: none;
+    }
+}
+
 .AppBar__controls {
     display: flex;
 }
@@ -51,10 +57,17 @@
     margin-left: 30px;
 }
 
-.AppBar__scoreRed {
+@media screen and (max-width: 900px) {
+    .AppBar__score > .AppBar__scoreLabel {
+        display: none;
+    }
+}
+
+.AppBar__score > .AppBar__scoreRed {
+    margin-left: 0;
     color: $kodenames-red;
 }
 
-.AppBar__scoreBlue {
+.AppBar__score > .AppBar__scoreBlue {
     color: $kodenames-blue;
 }

@@ -93,6 +93,9 @@ class Kodenames extends Component {
     }
 
     onCardClick = (idx) => {
+        if(this.state.cards[idx].active) {
+            return;
+        }
         let newCards = JSON.parse(JSON.stringify(this.state.cards));
         newCards[idx].active = true;
         if(newCards[idx].color === BLUE) {

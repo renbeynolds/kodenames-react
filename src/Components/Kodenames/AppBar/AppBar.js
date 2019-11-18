@@ -11,7 +11,7 @@ function AppBar(props) {
                 <h1>KodeNames</h1>
             </div>
             <div className='AppBar__score'>
-                <h1>Remaining: </h1>
+                <h1 className='AppBar__scoreLabel'>Remaining: </h1>
                 <h1 className='AppBar__scoreRed'>{props.redRemaining}</h1>
                 <h1 className='AppBar__scoreBlue'>{props.blueRemaining}</h1>
             </div>
