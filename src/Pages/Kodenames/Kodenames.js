@@ -75,9 +75,11 @@ class Kodenames extends Component {
     }
 
     onSpymaster = () => {
-        const newCards = this.state.cards.map(x => ({word: x.word, color: x.color, active: false}));
+        const cards = this.generateCards(this.state.boardNumber);
         this.setState({
-            cards: newCards,
+            redRemaining: cards[0],
+            blueRemaining: cards[1],
+            cards: cards[2],
             spymaster: true
         });
     }
